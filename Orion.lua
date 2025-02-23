@@ -1,4 +1,6 @@
-
+getgenv().gethui = function() 
+  return game.CoreGui 
+end
 
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
