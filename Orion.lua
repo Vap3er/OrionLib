@@ -1,7 +1,3 @@
-getgenv().gethui = function() 
-  return game.CoreGui 
-end
-
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
@@ -40,6 +36,11 @@ if not Success then
 	warn("\nOrion Library - Failed to load Feather Icons. Error code: " .. Response .. "\n")
 end	
 ]]
+
+getgenv().gethui = function() 
+  return game.CoreGui 
+end
+
 local function GetIcon(IconName)
 	if Icons[IconName] ~= nil then
 		return Icons[IconName]
